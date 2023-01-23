@@ -2,22 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "Poppins", sans-serif;
   font-family: "Poppins", sans-serif;
 }
-
-.wrap_home{
-    display: flex;
-height: 100vh;
-    flex-direction: column;
+html {
+  scroll-behavior: smooth;
 }
 
-/* Header CSS start  */
+.wrap_home {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* ---------------------- Header CSS start ---------------------- */
 .section_header {
   width: 100%;
   background-color: #be3144;
-  position: sticky;
+  position: fixed;
   top: 0;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
@@ -36,19 +38,15 @@ height: 100vh;
   color: rgba(255, 255, 255, 0.928);
   font-size: 22px;
   font-weight: 500;
-  /* padding: 1.5rem; */
-  /* background-color: #ff6f09; */
 }
 .nav_list:hover {
   background-color: #45567d;
 }
+/* ---------------------- Header CSS end ---------------------- */
 
-/* Header CSS end  */
-
-/* About CSS  */
+/* ---------------------- About CSS ----------------------  */
 .section_about {
   width: 100%;
-  /* height: 90vh; */
   flex: 1;
   display: flex;
   justify-content: center;
@@ -69,9 +67,9 @@ height: 100vh;
   font-style: italic;
   color: #be3144;
 }
-/* About CSS  */
+/* ---------------------- About CSS ----------------------  */
 
-/* work CSS  */
+/* ---------------------- work CSS ----------------------  */
 .section_work {
   width: 100%;
   background-color: #45567d;
@@ -84,18 +82,14 @@ height: 100vh;
   align-items: center;
 }
 .work_container > h1 {
- 
   max-width: fit-content;
   text-align: center;
   font-size: 2.8rem;
   color: white;
-  /* text-decoration: underline; */
   border-bottom: 2px solid white;
   margin-bottom: 1rem;
   line-height: 1.4;
 }
-
-/* work CSS  */
 .work_card {
   width: 100%;
   display: flex;
@@ -116,7 +110,6 @@ height: 100vh;
   object-fit: cover;
 }
 .card_title {
-  /* background-color: #303841; */
   font-size: 21px;
   padding: 1.5rem 0rem;
   color: rgba(255, 255, 255, 0.91);
@@ -129,7 +122,6 @@ height: 100vh;
 .card_title:hover .title_icon {
   color: #ff7f50;
 }
-
 .add_new_card {
   margin-top: 4rem;
 }
@@ -153,9 +145,9 @@ height: 100vh;
 .add_new_card > a:hover i {
   transform: translateX(2px);
 }
-/* work CSS  */
+/* ---------------------- work CSS ---------------------- */
 
-/* contact CSS  */
+/* ---------------------- contact CSS ----------------------  */
 .section_contact {
   width: 100%;
   height: 80vh;
@@ -179,7 +171,7 @@ height: 100vh;
   font-size: 1.2rem;
   font-weight: 100;
   line-height: 1.4;
-  margin-top:12px;
+  margin-top: 12px;
 }
 
 .section_contact_frame2 {
@@ -203,8 +195,10 @@ height: 100vh;
 .social_links:hover {
   transform: translateY(8px);
 }
-/* contact CSS  */
+/* ---------------------- contact CSS ----------------------  */
 
+
+/* ---------------------- footer CSS ---------------------- */
 .section_footer {
   font-weight: 300;
   display: flex;
@@ -219,9 +213,10 @@ height: 100vh;
   font-size: 18px;
   font-weight: 300;
 }
-/* footer CSS  */
+/* ---------------------- footer CSS ---------------------- */
 
-/* media queries for responsive site  */
+/* ------------- media queries for responsive site ----------------  */
+
 @media screen and (max-width: 426px) {
   .work_card {
     display: flex;
@@ -247,4 +242,5 @@ height: 100vh;
     font-size: 3rem;
   }
 }
-/* media queries for responsive site  */
+
+/* ------------- media queries for responsive site ----------------  */
